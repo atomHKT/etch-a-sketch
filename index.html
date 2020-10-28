@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="This is my Etch-a-Sketch project (The Odin Project)">
+	<meta name="author" content="atom.hkt">
+	<title>Etch-a-Sketch</title>
+	<link href="styles/minireset.css" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet">
+	<link href="styles/inputs.css" rel="stylesheet">
+	<script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Etch-a-Sketch</h1>
+		</header>
+		<section class="controls-container">
+			<div class="control size">
+				<label for="size">Grid Size</label>
+				<input id="size" type="range" name="size" step="1" min="16" max="100" value="16">
+			</div>
+			<div class="control reset">
+				<input type="button" class="btn" value="Reset" name="reset">
+			</div>
+			<div class="control color">
+				<label for="color">Color</label>
+				<input id="color" type="color" name="color" value="#000000">
+			</div>
+		</section>
+		<section class="grid-container">
+		</section>
+	</div>
+</body>
+
+</html>
