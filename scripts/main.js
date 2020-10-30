@@ -22,7 +22,7 @@ function startDraw() {
         (rgbControl[0] !== Number(rgba[0]))) {
         this.style.backgroundColor = `rgba(${rgbControl[0]}, ${rgbControl[1]}, ${rgbControl[2]}, 0.1)`;
     } else if ((rgba.length === 4) && (rgba[3] < 1)) {
-        let alpha = (Number(rgba[3]) + 0.1)
+        let alpha = (Number(rgba[3]) + 0.1);
         this.style.backgroundColor = `rgba(${rgba[0]}, ${rgba[1]}, ${rgba[2]}, ${alpha})`;
     }
 }
